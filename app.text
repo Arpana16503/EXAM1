@@ -10,7 +10,6 @@ mkdir git-essentials-lab
 cd git-essentials-lab
 git init
 
-
 :: 3) STAGE + COMMIT
 git add .
 git commit -m "Initial commit"
