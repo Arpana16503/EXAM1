@@ -1,0 +1,34 @@
+
+:: 0) VERIFY GIT + BASIC CONFIG (run once per machine)
+git --version
+git config --global user.name "kpneha4"
+git config --global user.email "kpneha4@gmail.com"
+git config --global init.defaultBranch main
+
+:: 1) START A NEW PROJECT LOCALLY
+mkdir git-essentials-lab
+cd git-essentials-lab
+git init
+
+
+:: 3) STAGE + COMMIT
+git add .
+git commit -m "Initial commit"
+
+
+:: 5) ADD REMOTE + PUSH MAIN (first push will prompt for GitHub login/token)
+git branch -M main
+git remote add origin https://github.com/kpneha4/git-essentials-lab.git
+git push -u origin main
+
+:: 6) CREATE A FEATURE BRANCH, EDIT FILE, COMMIT, PUSH
+git checkout -b feature/update-readme
+
+
+git add .
+git commit -m "Add Objectives section to README"
+git push origin main
+
+
+git clone __ctrl+v_____
+
